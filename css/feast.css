@@ -1,0 +1,137 @@
+#map {
+    height: 300px;
+    width: 500px;
+}
+
+#bounce1 {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+    -webkit-animation: bounce 2s infinite ease-in-out;
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+    }
+}
+
+@media (min-width: 768px) {
+    #bounce1 {
+        position: absolute;
+    }
+}
+
+.photobanner {
+    height: 150px;
+    width: 2450px;
+    margin-bottom: auto;
+}
+
+/*keyframe animations*/
+.first {
+    -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+    -ms-animation: bannermove 30s linear infinite;
+    -o-animation: bannermove 30s linear infinite;
+    animation: bannermove 30s linear infinite;
+}
+
+@keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -900px;
+    }
+
+}
+
+@-moz-keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -900px;
+    }
+
+}
+
+@-webkit-keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -900px;
+    }
+
+}
+
+@-ms-keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -900px;
+    }
+
+}
+
+@-o-keyframes bannermove {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -900px;
+    }
+
+}
+
+.photobanner img {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    width: 225px;
+    height: auto;
+}
+
+.photobanner img:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+
+    -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    width: auto;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    color: white;}
+    /*.parent-slide{padding:15px;}*/
+/*.slider img{display: block;margin:auto;}*/
+
+.slick-prev:before, .slick-next:before{
+    color:red;
+}
